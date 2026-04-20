@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    padding: 0 auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    background-image: url('../Images/flowerbackground_left.png'), url('../Images/flowerbackground_right.png');
+    background-position: left top, right top;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain;
+    width: 100%;
+}
+header {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0 5px 0;
+}
+main {
+    text-align: left;
+    max-width: 900px;
+    margin: 30px auto 0 auto;
+}
+
+h1 {
+    font-size: 5rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+main p {
+    font-size: 1.5rem;
+    color: black;
+    max-width: 800px;
+}
+.button {
+    background-color: #E8AABA; 
+    color: black;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 500;
+    padding: 5px 30px;
+    border-radius: 20px;
+    display: inline-block;  
+    border: none;
+}
+main h2 {
+    margin-left: 0;
+    margin-bottom: 25px;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+.WeeklyBloom {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+    width: 100%;
+}
+
+.WeeklyBloom figure {
+    margin: 0;
+    flex-shrink: 0;      
+}
+
+.roses_details {
+    flex-grow: 1;
+}
+
+.roses_details h2 {
+    color: #E8AABA;
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.roses_details p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 100%; 
+    margin: 0;
+}
+.site-footer {
+    background-color: #f2c2cf; 
+    width: 100%;
+    margin-top: 80px;
+    padding: 20px 0 20px 0;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15%;
+    margin-right: auto;
+    padding-right: 5%; 
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.footer-logo img {
+    height: 70px;
+    width: auto;
+}
+
+@media only screen and (max-width: 800px) {
+    
+    main {
+        margin: 20px!important; 
+        width: auto; 
+    }
+
+    .WeeklyBloom {
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    h1 {
+        font-size: 2.87rem;
+        line-height: 1.2;
+        margin-bottom: 20px;
+        font-weight: 900;
+    }
+
+    .roses_details h2 {
+        color: #ff4187;}
+
+    .WeeklyBloom figure, 
+    .WeeklyBloom img {
+        width: 100%;
+        max-width: 330px;
+    }
+
+    .roses_details {
+        width: 100%;
+        text-align: left;
+    }
+    
+    .roses_details h2 {
+        margin-top: 10px;
+    }
+
+    .footer-content {
+        margin-left: 20px;
+        margin-right: 20px;
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start; 
+        gap: 30px;
+    }
+}
